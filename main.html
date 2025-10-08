@@ -1,16 +1,40 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <!-- Navigation Bar -->
+    <nav role="navigation" aria-label="Main Navigation">
+        <ul role="list">
+            <li role="listitem"><a href="#home">Home</a></li>
+            <li role="listitem"><a href="#about">About</a></li>
+            <li role="listitem"><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
 
+    <!-- Heading -->
+    <header>
+        <h1 role="heading" aria-level="1">Welcome to My Portfolio</h1>
+    </header>
+
+    <!-- Profile Image -->
+    <section id="about">
+        <img role="img" src="profile.jpg" alt="Portrait of Aman Vishwakarma" class="profile-img">
+        <p>Hello! I’m Aman Vishwakarma, a passionate web developer focused on building accessible and user-friendly websites.</p>
+    </section>
+
+    <!-- Project List -->
+    <section id="projects">
+        <h2 role="heading" aria-level="2">My Projects</h2>
+        <ul role="list">
+            <li role="listitem">Responsive eCommerce Website</li>
+            <li role="listitem">Portfolio Website with Dark Mode</li>
+            <li role="listitem">JavaScript To-Do App</li>
+        </ul>
+    </section>
 </body>
-
 </html>
